@@ -79,7 +79,7 @@ if prompt:
         try:
             response = requests.post(
                 "http://127.0.0.1:8000/exact_match/by_code",
-                json={"code": "C102193"),
+                json={"code": "C102193"},
                 timeout=30
             )
             if response.status_code == 200:
