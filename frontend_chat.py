@@ -71,11 +71,6 @@ selected_term = st.selectbox("Choose a suggested keyword:", [""] + terms)
 prompt = st.text_input("Enter a medical term or NCIT code...", value= "C102193") #selected_term)
 
 if prompt:
-    '''# Look up in CSV
-    result_row = df[df["Term"].str.lower() == prompt.lower()]
-    if not result_row.empty:
-        synonyms = result_row.iloc[0]["Synonyms"]
-        definition = result_row.iloc[0]["Definition"]'''
     if True:
         try:
             response = requests.post(
