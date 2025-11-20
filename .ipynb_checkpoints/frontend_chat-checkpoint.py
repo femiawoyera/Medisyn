@@ -75,7 +75,7 @@ if prompt:
     if not result_row.empty:
         synonyms = result_row.iloc[0]["Synonyms"]
         definition = result_row.iloc[0]["Definition"]'''
-    
+    if True:
         try:
             response = requests.post(
                 "http://127.0.0.1:8000/exact_match/by_code",
